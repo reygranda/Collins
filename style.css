@@ -33,6 +33,9 @@ ul {
     font-weight: 400;
     font-size: 25px;
 }
+.nav-link:hover {
+    color: white;
+}
 #button {
     display: inline-block;
     background-color: #FFF;
@@ -50,13 +53,14 @@ ul {
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 900;
     font-size: 125%;
+    transition-property: transform;
+    transition-duration: 1s;
   }
   #button:hover {
-    cursor: pointer;
-    background-color: #333;
-  }
-  #button:active {
-    background-color: #555;
+    animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   
 #carousel {
@@ -65,4 +69,8 @@ ul {
     padding-right: 225px;
     background-color: black;
     
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
