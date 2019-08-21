@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    
+    <title>Collins</title>
+</head>
+<body>
+        <div class="navbar">
+            <a class="navbar-brand" href="./index.html">
+            <img src="./collins-logo.svg" class="logo" alt="logo" width="159" height="24">
+            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="https://wearecollins.imgix.net/uploads/Naturalizer_x_Collins_01-491a5a.png" class="d-block w-100" alt="1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/Mailchimp_Case_Study_1-3c9516.gif?auto=format%2Ccompress&fit=max&q=90&w=1600" class="d-block w-100" alt="2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/Horizontal5-ca88ff.jpg" class="d-block w-100" alt="3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/Collins_Splash_Dropbox.jpg" class="d-block w-100" alt="4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/Ogilvy_Logo_Blue.jpg?auto=format,compress&fit=max&q=90&w=1600" class="d-block w-100" alt="5">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/Vitaminwater_BrandBook_01.jpg?auto=format,compress&fit=max&q=90&w=1600" class="d-block w-100" alt="6">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/Exploratorium_Inflatable-Case-Study-15.jpg" class="d-block w-100" alt="7">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/Spotify_Collins.gif" class="d-block w-100" alt="8">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/HeydayCover.jpg" class="d-block w-100" alt="9">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/Collins_Splash_DEastCut.jpg" class="d-block w-100" alt="10">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wearecollins.imgix.net/uploads/Collins_Splash_Nike.jpg" class="d-block w-100" alt="11">
+                  </div>
+                </div>
+            </div>
+        <div class="up-wrap">
+            <a id="button">
+                <span>Up</span>
+            </a>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+jQuery(document).ready(function() {
+  
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+});
+
+var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+</script>
+</body>
+</html>

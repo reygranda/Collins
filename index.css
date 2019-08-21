@@ -1,0 +1,68 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+    background-color: black;
+}
+.navbar {
+    background-color: black;
+    position: fixed;
+    height: 80px;
+}
+.logo {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+.navbar-brand {
+    padding-left: 225px;
+}
+.nav {
+    padding-right: 225px;
+}
+.nav-link {
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+#button {
+    display: inline-block;
+    background-color: #FFF;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    padding-top: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: 125%;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  
+#carousel {
+    padding-top: 3.6818181818rem;
+    padding-left: 225px;
+    padding-right: 225px;
+    background-color: black;
+    
+}
